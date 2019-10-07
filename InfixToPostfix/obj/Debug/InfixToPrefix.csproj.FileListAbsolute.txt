@@ -1,0 +1,9 @@
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\InfixToPrefix.exe.config
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\InfixToPrefix.exe
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\InfixToPrefix.pdb
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\obj\Debug\InfixToPrefix.csprojResolveAssemblyReference.cache
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\obj\Debug\InfixToPrefix.exe
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\obj\Debug\InfixToPrefix.pdb
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\expression.txt
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\expression3.txt
+C:\Users\JULIA\Documents\Visual Studio 2015\Projects\InfixToPrefix\InfixToPrefix\bin\Debug\expression2.txt
