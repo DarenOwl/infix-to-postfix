@@ -55,7 +55,7 @@ namespace InfixToPrefix
 
         public List<string> InfixToPostfix(string expression)
         {
-            MyStack functions = new MyStack();
+            var functions = new MyStack<string>();
             string[] words = expression.Split(' '); //разбитое на "слова" выражение
             List<string> postfix = new List<string>();
 
@@ -87,7 +87,78 @@ namespace InfixToPrefix
 
         public double CalculateInPostfixNotation(List<string> expression)
         {
-            return 0;
+            var s = new MyStack<double>();
+            double result = 0;
+
+            foreach (var word in expression)
+            {
+                if (char.IsDigit(word[0]))
+                    s.Push(double.Parse(word));
+                else if (variables.ContainsKey(word))
+                    s.Push(variables[word]);
+                else
+                if (word == "+")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = a + b;
+                    s.Push(result);
+                }
+                else if (word == "-")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = a - b;
+                    s.Push(result);
+                }
+                else if (word == "*")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = a * b;
+                    s.Push(result);
+                }
+                else if (word == "/")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = a / b;
+                    s.Push(result);
+                }
+                else if (word == ":")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = a / b;
+                    s.Push(result);
+                }
+                else if (word == "^")
+                {
+                    var a = s.Pop();
+                    var b = s.Pop();
+                    result = Math.Pow(a, b);
+                    s.Push(result);
+                }
+                else if (word == "ln")
+                {
+                    var a = s.Pop();
+                    result = Math.Log(a);
+                    s.Push(result);
+                }
+                else if (word == "cos")
+                {
+                    var a = s.Pop();
+                    result = Math.Cos(a);
+                    s.Push(result);
+                }
+                else if (word == "sin")
+                {
+                    var a = s.Pop();
+                    result = Math.Sin(a);
+                    s.Push(result);
+                }
+            }
+            return result;
         }
 
         void PrintExpression(IEnumerable<string> expression)

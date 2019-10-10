@@ -4,26 +4,25 @@ using System.IO;
 
 namespace InfixToPrefix
 {
-    public class MyStack
+    public class MyStack<T>
     {
-        List<string> list = new List<string>();
-        public void Push(string value)
+        List<T> list = new List<T>();
+        public void Push(T value)
         {
             list.Add(value);
         }
-        public string Pop()
+        public T Pop()
         {
-            if (list.Count == 0) return "Ошибка выполнения команды - Стек пуст";
+            if (list.Count == 0) throw new Exception("Ошибка выполнения команды - Стек пуст");
             var result = list[list.Count - 1];
             list.RemoveAt(list.Count - 1);
             return result;
         }
 
-        public string Top()
+        public T Top()
         {
-            if (list.Count != 0)
-                return list[list.Count - 1];
-            return "Ошибка выполнения команды - Стек пуст";
+            if (list.Count == 0) throw new Exception("Ошибка выполнения команды - Стек пуст");
+            return list[list.Count - 1];
         }
 
         public bool IsEmpty()
@@ -34,9 +33,7 @@ namespace InfixToPrefix
         public void Print()
         {
             foreach (var item in list)
-            {
                 Console.WriteLine(item);
-            }
         }
 
         public static void ExecuteFromFile()
@@ -54,7 +51,7 @@ namespace InfixToPrefix
             watch.Restart();
 
             var commands = input.Split(' ');
-            var s = new MyStack();
+            var s = new MyStack<string>();
             for (int i = 0; i < commands.Length; i++)
             {
                 if (commands[i][0] == '1')
