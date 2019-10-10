@@ -91,7 +91,6 @@ namespace InfixToPrefix
             double result = 0;
 
             foreach (var word in expression)
-            {
                 if (char.IsDigit(word[0]))
                     s.Push(double.Parse(word));
                 else if (variables.ContainsKey(word))
@@ -99,43 +98,43 @@ namespace InfixToPrefix
                 else
                 if (word == "+")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = a + b;
                     s.Push(result);
                 }
                 else if (word == "-")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = a - b;
                     s.Push(result);
                 }
                 else if (word == "*")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = a * b;
                     s.Push(result);
                 }
                 else if (word == "/")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = a / b;
                     s.Push(result);
                 }
                 else if (word == ":")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = a / b;
                     s.Push(result);
                 }
                 else if (word == "^")
                 {
-                    var a = s.Pop();
                     var b = s.Pop();
+                    var a = s.Pop();
                     result = Math.Pow(a, b);
                     s.Push(result);
                 }
@@ -157,7 +156,7 @@ namespace InfixToPrefix
                     result = Math.Sin(a);
                     s.Push(result);
                 }
-            }
+
             return result;
         }
 

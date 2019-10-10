@@ -16,3 +16,5 @@ C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\bin\Debug\
 C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\bin\Debug\InfixToPrefix.exe
 C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\bin\Debug\InfixToPrefix.pdb
 C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\obj\Debug\InfixToPostfix.csprojResolveAssemblyReference.cache
+C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\bin\Debug\expression4.txt
+C:\Users\JULIA\Documents\Repositories\infix-to-postfix\InfixToPostfix\bin\Debug\input.txt

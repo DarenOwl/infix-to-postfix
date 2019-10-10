@@ -39,16 +39,16 @@ namespace InfixToPrefix
         public static void ExecuteFromFile()
         {
             //считывание из файла
-            var watch = System.Diagnostics.Stopwatch.StartNew();
+            //var watch = System.Diagnostics.Stopwatch.StartNew();
 
             string input = File.ReadAllText("input.txt");
 
-            watch.Stop();
-            Console.WriteLine("Время считывания: " + watch.Elapsed);
+            //watch.Stop();
+            //Console.WriteLine("Время считывания: " + watch.Elapsed);
 
 
             //Выполнение программы
-            watch.Restart();
+            //watch.Restart();
 
             var commands = input.Split(' ');
             var s = new MyStack<string>();
@@ -72,7 +72,7 @@ namespace InfixToPrefix
                     s.Print();
                 }
             }
-            Console.WriteLine("Время выполнения: " + watch.Elapsed);
+            //Console.WriteLine("Время выполнения: " + watch.Elapsed);
         }
     }  
 }
